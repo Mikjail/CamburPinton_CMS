@@ -129,5 +129,10 @@
       }
     }
   },
-  "defaultProject": "angularBoilerPlate"
+  "defaultProject": "angularBoilerPlate",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
