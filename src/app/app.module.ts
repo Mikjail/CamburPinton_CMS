@@ -22,8 +22,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
     AppRoutingModule,
     MaterialModule,
     StoreModule.forRoot(reducers),
-    AuthModule,
-    StoreModule.forRoot(reducers)
+    AuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]
