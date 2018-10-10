@@ -8,13 +8,10 @@ import { AppComponent } from './app.component';
 import { MaterialModule } from './material.module';
 import { AuthModule } from './auth/auth.module';
 import { reducers } from './app.reducer';
-import { WelcomeComponent } from './welcome/welcome.component';
-
 
 @NgModule({
   declarations: [
-    AppComponent,
-    WelcomeComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
