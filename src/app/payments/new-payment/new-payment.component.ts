@@ -36,6 +36,6 @@ export class NewPaymentComponent implements OnInit {
   onPayment(form: NgForm) {
     this.paymentList[this.indexSelected].status = 'Pagado';
     this.paymentService.updatePaymentStatus(this.paymentList);
-    this.router.navigate(['/list']);
+    this.router.navigate(['/']);
   }
 }
