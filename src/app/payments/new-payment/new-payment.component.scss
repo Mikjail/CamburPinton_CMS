@@ -1,0 +1,18 @@
+.new-payment{
+   display:flex;
+   justify-content: center;
+    .payment-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+    }
+    .payment-card-body{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    #amountToPay{
+        text-align: center;
+    }
+  
+}
