@@ -1,0 +1,7 @@
+{
+    "/API":{
+        "target": "http://192.169.181.36:9096",
+        "secure": false,
+        "changeOrigin": true
+    }
+}

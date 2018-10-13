@@ -9,7 +9,6 @@ import { PaymentListComponent } from './payments/payment-list/payment-list.compo
 const routes: Routes = [
     { path: '', component: PaymentListComponent},
     { path: 'operacion', component: NewPaymentComponent}
-    
 ];
 
 @NgModule({

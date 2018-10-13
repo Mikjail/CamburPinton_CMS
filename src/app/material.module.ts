@@ -10,6 +10,7 @@ import {
     MatSelectModule, // NewPayment Component
     MatFormFieldModule,
     MatInputModule,
+    MatProgressSpinnerModule,//Loader Spinner
     MatButtonModule, // Buttons
     MatIconModule // Icons
  } from '@angular/material';
@@ -27,7 +28,8 @@ import {
         MatFormFieldModule,
         MatInputModule,
         MatPaginatorModule,
-        MatListModule
+        MatListModule,
+        MatProgressSpinnerModule
     ],
     exports: [
         MatButtonModule,
@@ -41,7 +43,8 @@ import {
         MatFormFieldModule,
         MatInputModule,
         MatPaginatorModule,
-        MatListModule
+        MatListModule,
+        MatProgressSpinnerModule
     ]
 })
 

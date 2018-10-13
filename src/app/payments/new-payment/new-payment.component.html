@@ -5,17 +5,18 @@
               Cuentas a Pagar
           </mat-card-title>
           <mat-card-content class="payment-card-body">
-            <!-- <mat-spinner *ngIf="isLoading$ | async"></mat-spinner> -->
-            <mat-form-field>
+            <mat-spinner *ngIf="isLoading$ | async"   diameter="40"></mat-spinner>
+            <mat-form-field *ngIf="!(isLoading$ | async)">
               <mat-select (selectionChange)="selectPayment($event.value)"  placeholder="Seleccione Servicio" ngModel name="payment" required >
                  <mat-option *ngFor="let payment of pendingPaymentList" [value]="payment.id">
-                      {{payment.name}}
+                     {{payment.date}} - {{payment.name}}
                  </mat-option>
               </mat-select>
             </mat-form-field>
-            <mat-form-field *ngIf="indexSelected > -1">
-                <input matInput type="number" name="amount" id="amountToPay" [ngModel]="paymentList[indexSelected].amount" disabled>
-            </mat-form-field>
+            <ng-container *ngIf="indexSelected > -1">
+                    <span id="amountToPay">{{paymentList[indexSelected].amount}} EUR</span>
+                <!-- <input matInput type="number" name="amount" id="amountToPay" [ngModel]="paymentList[indexSelected].amount" disabled> -->
+            </ng-container>
           </mat-card-content>
           <mat-card-actions>
               <button  color="primary" type="submit" mat-button [disabled]="f.invalid">
