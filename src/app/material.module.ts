@@ -2,10 +2,10 @@ import {NgModule} from '@angular/core';
 import {
     MatSidenavModule, // SideNav Component
     MatToolbarModule, // SideNav Component
-    MatListModule, // PaymentList Component
-    MatTableModule, // PaymentList Component
-    MatSortModule, // PaymentList Component
-    MatPaginatorModule, // PaymentList Component
+    MatListModule, // ProductList Component
+    MatTableModule, // ProductList Component
+    MatSortModule, // ProductList Component
+    MatPaginatorModule, // ProductList Component
     MatCardModule, // NewPayment Component
     MatSelectModule, // NewPayment Component
     MatFormFieldModule,

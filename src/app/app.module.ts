@@ -14,8 +14,8 @@ import { reducers } from './app.reducer';
 import { HeaderComponent } from './navigation/header/header.component';
 import { SidenavComponent } from './navigation/sidenav/sidenav.component';
 
-import { PaymentModule } from './payments/payments.module';
-import { PaymentService } from './payments/payments.service';
+import { ProductModule } from './products/products.module';
+import { ProductService } from './products/products.service';
 
 @NgModule({
   declarations: [
@@ -29,12 +29,12 @@ import { PaymentService } from './payments/payments.service';
     BrowserAnimationsModule,
     AppRoutingModule,
     MaterialModule,
-    PaymentModule,
+    ProductModule,
     StoreModule.forRoot(reducers),
     AuthModule,
 
   ],
-  providers: [ PaymentService],
+  providers: [ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

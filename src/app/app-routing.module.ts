@@ -1,14 +1,13 @@
-import { NewPaymentComponent } from './payments/new-payment/new-payment.component';
+import { ProductListComponent } from './products/product-list/product-list.component';
 import {NgModule} from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { PaymentListComponent } from './payments/payment-list/payment-list.component';
+
 
 
 
 
 const routes: Routes = [
-    { path: '', component: PaymentListComponent},
-    { path: 'operacion', component: NewPaymentComponent}
+    { path: '', component: ProductListComponent},
 ];
 
 @NgModule({
